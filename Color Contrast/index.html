@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Background Color Contrast Checker</title>
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <h1>Text and Background Color Contrast Checker</h1>
+
+            <div class="form">
+                <div class="form-group">
+                    <label for="textColor">Text Color:</label>
+                    <input type="color" id="textColor" value="#000000">
+                </div>
+                <div class="form-group">
+                    <label for="bgColor">Background Color:</label>
+                    <input type="color" id="bgColor" value="#ffffff">
+                </div>
+            </div>
+
+            <div class="result">
+                BSCS 3A
+            </div>
+
+            <p>Contrast Rate:<br><span id="rating">10</span></p>
+
+            <button onclick="contrastChecker(this)">Check Contrast</button>
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
